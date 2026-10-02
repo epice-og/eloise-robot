@@ -1,0 +1,17 @@
+{
+  "name": "GHS VEX PROS + LemLib",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-22.04",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteEnv": {
+    "PATH": "/opt/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi/bin:${containerEnv:PATH}",
+    "PROS_TOOLCHAIN": "/opt/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sigbots.pros",
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
